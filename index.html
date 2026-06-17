@@ -309,12 +309,11 @@ Audio Amplifier Project Report</h3>
             padding: 40px 20px;
         }
         
-        /* Updated container with reduced horizontal padding to match the top block */
         .portfolio-container {
             max-width: 800px;
             margin: 0 auto;
             background: #ffffff;
-            padding: 30px 15px; /* Reduced from 30px to align borders properly */
+            padding: 30px 15px; 
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
@@ -324,15 +323,16 @@ Audio Amplifier Project Report</h3>
             border-bottom: 2px solid #002855;
             padding-bottom: 10px;
             margin-top: 0;
-            margin-left: 0; /* Ensures perfect left justification */
+            margin-left: 0; 
         }
 
+        /* Flex container keeps items in a row on desktop, switching to column on mobile */
         .award-card {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 25px;
             margin-top: 25px;
-            padding: 0; /* Flushes card elements to the container edges */
+            padding: 0; 
         }
 
         @media (min-width: 600px) {
@@ -342,16 +342,20 @@ Audio Amplifier Project Report</h3>
             }
         }
 
+        /* Image is strictly contained and forced to the left */
         .award-image {
             flex: 1;
-            max-width: 100%;
+            max-width: 250px; /* Prevents the certificate from stretching out too much */
+            width: 100%;
+            height: auto;
             border: 1px solid #ddd;
             border-radius: 4px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
 
+        /* Details container pushed to the right side */
         .award-details {
-            flex: 1.5;
+            flex: 2;
         }
 
         .award-title {
@@ -376,7 +380,7 @@ Audio Amplifier Project Report</h3>
         }
 
         .award-description {
-            margin: 0 0 15px 0;
+            margin: 0;
         }
 
         .bullets {
