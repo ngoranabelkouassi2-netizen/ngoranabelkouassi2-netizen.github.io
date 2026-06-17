@@ -313,26 +313,27 @@ Audio Amplifier Project Report</h3>
             max-width: 800px;
             margin: 0 auto;
             background: #ffffff;
-            padding: 30px 15px; 
+            /* REMOVED horizontal padding here to allow the image to touch the left edge */
+            padding: 30px 0; 
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
 
+        /* Added padding specifically to the heading to keep it aligned */
         h2 {
-            color: #002855; /* UMaine Navy Blue */
+            color: #002855; 
             border-bottom: 2px solid #002855;
             padding-bottom: 10px;
-            margin-top: 0;
-            margin-left: 0; 
+            margin: 0 15px; 
         }
 
-        /* Flex container keeps items in a row on desktop, switching to column on mobile */
         .award-card {
             display: flex;
             flex-direction: column;
             gap: 25px;
             margin-top: 25px;
-            padding: 0; 
+            /* Added padding on the right side only to protect the text layout */
+            padding: 0 15px 0 0; 
         }
 
         @media (min-width: 600px) {
@@ -342,20 +343,22 @@ Audio Amplifier Project Report</h3>
             }
         }
 
-        /* Image is strictly contained and forced to the left */
+        /* The image now flushes completely to the left edge of the container */
         .award-image {
             flex: 1;
-            max-width: 250px; /* Prevents the certificate from stretching out too much */
+            max-width: 250px; 
             width: 100%;
             height: auto;
             border: 1px solid #ddd;
-            border-radius: 4px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            /* Only round the right corners if you want it perfectly seamless, 
+               otherwise keep border-radius: 4px; */
+            border-radius: 0 4px 4px 0; 
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
         }
 
-        /* Details container pushed to the right side */
         .award-details {
             flex: 2;
+            padding-left: 10px; /* Gives space between the image and the text */
         }
 
         .award-title {
@@ -367,7 +370,7 @@ Audio Amplifier Project Report</h3>
 
         .award-organization {
             font-size: 1.1rem;
-            color: #4a777a; /* UMaine Light Blue */
+            color: #4a777a; 
             margin: 0 0 5px 0;
             font-weight: 600;
         }
