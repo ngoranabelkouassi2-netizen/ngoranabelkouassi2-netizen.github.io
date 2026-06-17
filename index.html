@@ -298,7 +298,7 @@ Audio Amplifier Project Report</h3>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Awards & Honors</title>
+    <title>Portfolio - Awards & Honors Section</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -308,81 +308,84 @@ Audio Amplifier Project Report</h3>
             margin: 0;
             padding: 40px 20px;
         }
+        
+        /* Updated container with reduced horizontal padding to match the top block */
         .portfolio-container {
-            max-width: 900px; /* Slightly widened for a better professional text-to-image ratio */
+            max-width: 800px;
             margin: 0 auto;
             background: #ffffff;
-            padding: 40px;
+            padding: 30px 15px; /* Reduced from 30px to align borders properly */
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
+
         h2 {
             color: #002855; /* UMaine Navy Blue */
             border-bottom: 2px solid #002855;
             padding-bottom: 10px;
             margin-top: 0;
-            margin-bottom: 30px;
+            margin-left: 0; /* Ensures perfect left justification */
         }
+
         .award-card {
             display: flex;
             flex-direction: column;
             gap: 20px;
-            margin-bottom: 30px;
+            margin-top: 25px;
+            padding: 0; /* Flushes card elements to the container edges */
         }
-        /* Desktop Layout Rules */
+
         @media (min-width: 600px) {
             .award-card {
                 flex-direction: row;
                 align-items: flex-start;
-                gap: 35px; /* Creates clean spacing between image and content */
             }
         }
-        .award-image-container {
-            flex: 0 0 35%; /* Keeps image consistently proportioned on the left */
-            max-width: 100%;
-        }
+
         .award-image {
-            width: 100%;
-            height: auto;
-            display: block;
-            border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+            flex: 1;
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
+
         .award-details {
-            flex: 1; /* Automatically takes up the remaining 65% of layout space */
+            flex: 1.5;
         }
+
         .award-title {
             font-size: 1.4rem;
             font-weight: bold;
             color: #111;
-            margin: 0 0 6px 0;
+            margin: 0 0 5px 0;
         }
+
         .award-organization {
             font-size: 1.1rem;
             color: #4a777a; /* UMaine Light Blue */
-            margin: 0 0 6px 0;
+            margin: 0 0 5px 0;
             font-weight: 600;
         }
+
         .award-date {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             color: #666;
             font-style: italic;
-            margin: 0 0 18px 0;
+            margin: 0 0 15px 0;
         }
+
         .award-description {
-            margin: 0;
+            margin: 0 0 15px 0;
         }
+
         .bullets {
             padding-left: 20px;
             margin: 0;
         }
+
         .bullets li {
-            margin-bottom: 10px;
-            color: #444;
-        }
-        .bullets li:last-child {
-            margin-bottom: 0;
+            margin-bottom: 8px;
         }
     </style>
 </head>
@@ -392,12 +395,10 @@ Audio Amplifier Project Report</h3>
     <h2>Awards & Honors</h2>
     
     <div class="award-card">
-        <div class="award-image-container">
-            <img src="images/francis.png" alt="Francis Crowe Society Induction Certificate - Abel Ngoran Kouassi" class="award-image">
-        </div>
+        <img src="image_35e3ac.jpg" alt="Francis Crowe Society Induction Certificate - Abel Ngoran Kouassi" class="award-image">
         
         <div class="award-details">
-            <h3 class="award-title">Francis Crowe Society Inductee</h3>
+            <p class="award-title">Francis Crowe Society Inductee</p>
             <p class="award-organization">University of Maine – Maine College of Engineering and Computing</p>
             <p class="award-date">Issued: May 9, 2026</p>
             
